@@ -6,22 +6,50 @@
   <title> my portfolio  </title>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="styles.css">
+<script>
+var i;
+var images = [];
+var time = 3000;
+
+
+images[0]='R.png';
+images[1]='img2.png';
+
+function changeImg() {
+
+document.slide.src =images[i];
+
+if(i<images.length -1){
+
+  i++;
+}  else{
+
+  i=0;
+}
+setTimeout("changeImg()",time);
+}
+window.onload = changeImg;
+
+</script>
+
 </head>
 
 <body>
 
   <div style="margin-left: 45px;">
   <div class="header">
-    <header>
+    <header class="header">
 <nav>
   <ul> 
     <li> <a href = "index.html" > Home </a></li> 
     <li> <a href="page.html">About</a> </li>        
   </ul>
 </nav>
-    <h1>  Hi, my name is Gift Yiwombe! </h1>   
+       
   </header>        
+
 </div>
+<h1>  Hi, my name is Gift Yiwombe! </h1>
 
 <p>I am a begginer web designer, and also a student at Mzuzu University, <br>
    persuing Bachlor of science in information and communication technology, <br>
@@ -32,10 +60,12 @@
 
 <h3>My other previous projects</h3>
 <p>some of a few projects I have worked on are shown in the pictures below  <br> 
-
+  <div class="slideshow">
   <div style="margin-top: 70px;">
-  <img src="R.png" alt="website image">  <img src="img2.png" alt="website image">
+ <img name="slide" width="250" height="150">
   </div>
+</div>
+
 </p>
 
 
