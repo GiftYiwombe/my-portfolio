@@ -1,5 +1,22 @@
+<?php
+
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpassword = "";
+$dbname = "portfolio";
+
+if (!$conn = mysqli_connect($dbhost,$dbuser,$dbpassword,$dbname)){
+
+   die("Failed to connect");
+  
+}
+echo "connection succesful";
+
+?>
+
+
+
 <!DOCTYPE html>
- 
 
 <html>
 <head>
@@ -45,24 +62,39 @@ window.onload = changeImg;
 
 }
 
-
-
 </script>
+<style>
+h1, p,h3{
+text-align: center;
 
+}
 
+.slideshow{
+text-align: center;
 
+}
+body{
+  color: white;
+  font-size: large;
+}
+
+</style>
 
 </head>
 
 <body>
-
+  
   <div style="margin-left: 45px;">
   <div class="header">
     <header class="header">
-<nav>
+      
+<nav> 
+  <img src="logoindex.png" alt="logo">
   <ul> 
-    <li> <a href = "index.html" > Home </a></li> 
-    <li> <a href="page.html">About</a> </li>        
+    <li> <a href = "index.html"> Home </a></li>  
+    <li> <a href="skills.html">Skills</a> </li>   
+    <li> <a href="projects.html">Projects </a> </li> 
+    <li> <a href="about.html">About</a> </li>   
   </ul>
 </nav>
        
@@ -85,7 +117,6 @@ window.onload = changeImg;
  <img name="slide" width="250" height="150">
   </div>
 </div>
-
 </p>
 
 
@@ -95,26 +126,18 @@ window.onload = changeImg;
      video editing, Audio production,<br> 
      and creating animations.<br>                                                          
 </p>
-<button class="button-color"> Hire me now </button><br><br>
+<div class="button-container"><button class="button-color"> Hire me now </button><br><br></div>
+
+<h5>my social meadia links</h5>
+
+
 </body>
-
-
-<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-   Name: <input type="text" name="fname"><br><br>
-   password: <input type="text" name="password"><br><br>
-  <input type="submit" value="Submit">
-
-
-
-</form>
-
-
-
-<h3>Social meadia links</h3>
 <footer>
-  <ul>  
+<ul>  
 <li><a href ="https://web.facebook.com/profile.php?id=100092162982438">facebook</a> </li>
 <li><a href="https:wa.me/265886416168">Whatsapp</a></li>   
+
+<li> <a href="contact.html">Contact</a> </li>
  </ul>
 </footer>
 </div>

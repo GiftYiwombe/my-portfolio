@@ -1,0 +1,42 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+
+.container{
+    height: 50%vh;
+    display: flexbox;
+    align-items: center;
+    background-color: blue;
+}
+
+.container .progress-container{
+   margin-bottom: 45px;
+}
+
+
+.container .progress-container h3{
+
+    margin: 0 0 20px 20px;
+}
+
+
+
+.container .progress-container .progress-bar {
+position: relative;
+width: 20%;
+height: 30;
+border-radius: 30px;
+background-color: brown;
+}
+
+.container .progress-container .progress-bar span{
+
+transition: width .5s linear;
+height: 100%;
+width: 100%;
+}
